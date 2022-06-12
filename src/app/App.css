@@ -1,0 +1,75 @@
+.container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  max-height: 700px;
+  width: 600px;
+  max-width: 100vw;
+  color: var(--text-primary);
+  background-color: #205072;
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  
+}
+
+.container .return__menu-btn{
+  margin-top: 20px;
+  border: none;
+  border-radius: 5px;
+  color: var(--text-primary);
+  font-size: 1.3rem;
+  padding: 0.7rem 1rem;
+  background-color: var(--btn-primary);
+  transition: all 0.2s;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.container .return__menu-btn:hover{
+  padding: 0.7rem 1.35rem;
+  background-color: var(--btn-hover);
+  cursor: pointer;
+}
+.selection__menu{
+  display: flex;
+  min-width: 300px;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+.selection__menu h1{
+  font-size: 2rem;
+  margin-bottom: 15px;
+  color: #fff;
+}
+
+
+.selection__btn{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 80px;
+  width: 240px;
+  font-weight: 550;
+  font-size: 1.7rem;
+  color: var(--btn-text);
+  background-color: var(--btn-primary);
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.2s ease-out, color 0.3s ease-in-out;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  
+}
+
+.selection__btn:hover{
+  width: 250px;
+  background-color: var(--btn-hover);
+  color: var(--btn-hover-text);
+}
+
+
+
+
+  

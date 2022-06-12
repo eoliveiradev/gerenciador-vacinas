@@ -1,0 +1,32 @@
+:root{
+  --btn-primary: #2c2c2c;
+  --btn-hover: #474747;
+  --btn-hover-text: #fff;
+  --btn-text: rgb(255, 255, 255);
+  --text-primary: #fff;
+}
+
+
+*{
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  list-style-type: none;
+  font-family: monospace;
+  -webkit-font-smoothing: antialiased;
+}
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  min-height: 100vh;
+  background-color: #333333;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
