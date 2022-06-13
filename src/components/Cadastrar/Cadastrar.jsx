@@ -70,26 +70,42 @@ export function Cadastrar(){
                 <form className="cadastroForm" name="cadastro-form"onSubmit={handleSubmit}>
                     <label>
                         <h1>Nome</h1>
-                        <input name="nome" type="text" required />
+                        <input name="nome" type="text" required 
+                            onInvalid={e => e.target.setCustomValidity('Campo obrigatório :)')}
+                            onInput={e => e.target.setCustomValidity('')}
+                        />
                     </label>
                     <label>
                         <h1>CPF</h1>
-                        <input name="cpf" type="number" required />
+                        <input name="cpf" type="number" required 
+                            onInvalid={e => e.target.setCustomValidity('Campo obrigatório :)')}
+                            onInput={e => e.target.setCustomValidity('')}
+                        />
                     </label>
                     <label>
                         <h1>Vacina</h1>
-                        <input name="vacina" type="text" required />
+                        <input name="vacina" type="text" required 
+                            onInvalid={e => e.target.setCustomValidity('Campo obrigatório :)')}
+                            onInput={e => e.target.setCustomValidity('')}
+                        />
                     </label>
                     <label>
                         <h1>Data</h1>
-                        <input name="data"type="date" required />
+                        <input name="data"type="date" required 
+                            onInvalid={e => e.target.setCustomValidity('Campo obrigatório :)')}
+                            onInput={e => e.target.setCustomValidity('')}                        
+                        
+                        />
                         {/* https://teamtreehouse.com/community/html-input-date-field-how-to-set-default-value-to-todays-date */}
                     </label>
                     <label>
                         <h1>Número Lote</h1>
-                        <input name="lote" type="number" required />
+                        <input name="lote" type="number" required 
+                            onInvalid={e => e.target.setCustomValidity('Campo obrigatório :)')}
+                            onInput={e => e.target.setCustomValidity('')}                        
+                        />
                     </label>
-                    <button type="submit" disabled={''} onClick={handleFormState}>Confirmar</button>
+                    <button type="submit"  onClick={handleFormState}>Confirmar</button>
                 </form>
             </>
         )

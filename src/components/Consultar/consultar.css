@@ -37,3 +37,40 @@
     background-color: var(--btn-hover);
     cursor: pointer;
 }
+.result__container{
+    height: 300px;
+    width: 70%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    background-color: #1f415a;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.result__wrapper{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    
+}
+.result__wrapper h1{
+    font-size: 1.7rem;
+    margin-bottom: 20px;
+}
+.result__wrapper h2{
+    width: 100%;
+    min-width: 230px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: space-between;
+    color: #fff;
+    border-bottom: 1px dashed rgba(255, 255, 255, 0.301);
+    padding-bottom: 3px;
+    
+}
+.result__wrapper h2 span{
+    font-size: 1.3rem;
+    color: #e8f5ff;
+}

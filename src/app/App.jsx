@@ -35,7 +35,7 @@ export default function App() {
     if(choice == 'listar'){
       return(
         <div className="container">
-          listar
+          Nada aqui por enquanto ;-;
           <button className="return__menu-btn" type="button" value='selection__menu' onClick={handleMenuNavigation}> Retornar ao Menu</button>
         </div>
       )
@@ -43,7 +43,6 @@ export default function App() {
     if(choice == 'consultar'){
       return(
         <div className="container">
-          
           <Consultar/>
           <button className="return__menu-btn" type="button" value='selection__menu' onClick={handleMenuNavigation}> Retornar ao Menu</button>
         </div>

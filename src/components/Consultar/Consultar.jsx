@@ -19,7 +19,7 @@ export function Consultar(){
                     cpf: banco[i].cpf, 
                     vaccine: banco[i].vaccine, 
                     date: banco[i].date, 
-                    lote: banco[i].loteNumber
+                    lote: banco[i].lotNumber
                 })
                 found = true;
                 setCpfAchou(true)
@@ -44,7 +44,19 @@ export function Consultar(){
         )
     }
     else if(cpfAchou){
-        return (<>Cpf encontrado: {searchResult.name}</>)
+        return (
+            <section className="result__container">
+                <div className="result__wrapper">
+                    <h1>Cpf encontrado!</h1>
+                    <h2>  Nome:   <span>{searchResult.name}   </span>  </h2>
+                    <h2>  Cpf:    <span>{searchResult.cpf}    </span>  </h2>
+                    <h2>  Vacina: <span>{searchResult.vaccine}</span>  </h2>
+                    <h2>  Data:   <span>{searchResult.date}   </span>  </h2>
+                    <h2>  Lote:   <span>{searchResult.lote}   </span>  </h2>
+                </div>
+
+            </section>
+        )
     }
     else{
         console.error("cpfAchou useState")
