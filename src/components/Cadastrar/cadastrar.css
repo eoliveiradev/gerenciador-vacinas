@@ -1,9 +1,10 @@
+/*-- Form --*/
+
 .cadastroForm{
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 5px;
-
     width: 100%;
 }
 .cadastroForm label{
@@ -13,7 +14,6 @@
     justify-content: center;
     width: 70%;
     height: 60px;
-
 }
 .cadastroForm label h1{
     align-self: flex-start;
@@ -36,7 +36,6 @@
     outline: 2px solid;
     outline-offset: -3px;
     outline-color: rgb(39, 39, 39);
-    
 }
 .cadastroForm button{
     border: none;
@@ -53,4 +52,20 @@
     padding: 1rem 2.3rem;
     background-color: var(--btn-hover);
     cursor: pointer;
+}
+
+
+/*-- Sucess output --*/
+.cadastro__sucesso{
+    text-align: center;
+}
+.cadastrar__outra-btn{
+    margin-top: 30px;
+    padding: 0;
+    width: 175px;
+    height: 40px;
+}
+.cadastrar__outra-btn:hover{
+    padding: 0;
+    width: 185px;
 }

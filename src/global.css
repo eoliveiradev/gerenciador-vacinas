@@ -1,13 +1,13 @@
 :root{
   --btn-primary: #2c2c2c;
-  --btn-hover: #474747;
+  --btn-hover: #333333;
   --btn-hover-text: #fff;
   --btn-text: rgb(255, 255, 255);
   --text-primary: #fff;
 }
 
-
 *{
+  scroll-behavior: smooth;
   padding: 0;
   margin: 0;
   text-decoration: none;
@@ -27,6 +27,5 @@ body {
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
 }

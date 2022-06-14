@@ -1,3 +1,22 @@
+button{
+    border: none;
+    border-radius: 5px;
+    padding: 1rem 2rem;
+    font-size: 1.3rem;
+    color: var(--text-primary);
+    background-color: var(--btn-primary);
+    transition: all 0.2s;
+    margin-top: 5px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+button:hover{
+    padding: 1rem 2.3rem;
+    background-color: var(--btn-hover);
+    cursor: pointer;
+}
+
+
+/* Search  Section*/
 .consultar__container{
     display: flex;
     flex-direction: column;
@@ -21,22 +40,8 @@
     outline-color: rgb(39, 39, 39);
 }
 
-.consultar__container button{
-    border: none;
-    border-radius: 5px;
-    padding: 1rem 2rem;
-    font-size: 1.3rem;
-    color: var(--text-primary);
-    background-color: var(--btn-primary);
-    transition: all 0.2s;
-    margin-top: 5px;
-    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-}
-.consultar__container button:hover{
-    padding: 1rem 2.3rem;
-    background-color: var(--btn-hover);
-    cursor: pointer;
-}
+
+/* Output Section */
 .result__container{
     height: 300px;
     width: 70%;
@@ -60,17 +65,29 @@
     margin-bottom: 20px;
 }
 .result__wrapper h2{
-    width: 100%;
+    width: 90%;
     min-width: 230px;
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 80px 1fr;
+    gap: 20px;
     justify-content: space-between;
     color: #fff;
     border-bottom: 1px dashed rgba(255, 255, 255, 0.301);
     padding-bottom: 3px;
-    
 }
 .result__wrapper h2 span{
     font-size: 1.3rem;
-    color: #e8f5ff;
+}
+.cpfNaoEncontrado{
+    text-align: center;
+}
+.buscar__novamente-btn{
+    margin-top: 30px;
+    padding: 0;
+    width: 175px;
+    height: 40px;
+}
+.buscar__novamente-btn:hover{
+    padding: 0;
+    width: 185px;
 }
