@@ -31,11 +31,11 @@
 }
 .selection__menu{
   display: flex;
-  min-width: 300px;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   gap: 10px;
+  text-align: center;
 }
 .selection__menu h1{
   font-size: 2rem;
@@ -63,4 +63,17 @@
   width: 250px;
   background-color: var(--btn-hover);
   color: var(--btn-hover-text);
+}
+
+@media screen and (max-width: 1300px){
+  .container{
+    width: 100vw;
+    max-height: 100vh;
+  }
+  .selection__btn{
+    width: 90%;
+  }
+  .selection__btn:hover{
+    width: 90%;
+  }
 }

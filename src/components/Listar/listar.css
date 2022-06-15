@@ -50,3 +50,16 @@
 .display ul li span{
     font-size: 1.3rem;
 }
+
+@media screen and (max-width: 1300px) and (min-width: 700px){
+    .display__wrapper{
+        max-width: 90%;
+        height: 600px;
+    }
+    .display{
+        height: 500px;
+    }
+    .display ul li{
+        grid-template-columns: 70px 400px;
+    }
+}
